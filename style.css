@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  padding-inline: 1rem;
+}
+main {
+  width: 100%;
+  position: relative;
+  max-width: 400px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.295);
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-inline: 40px;
+}
+main::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  z-index: -1;
+  background-color: purple;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.img-container {
+  width: fit-content;
+  margin-inline: auto;
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+h1 {
+  color: yellow;
+  padding-bottom: 10px;
+}
+.name {
+  color: #fff;
+}
+.text-content {
+  padding-inline: 1rem;
+}
+p {
+  color: purple;
+  font-weight: 500;
+  padding-top: 0.5rem;
+}
+a {
+  display: block;
+  font-family: inherit;
+  padding: 10px 14px;
+  background-color: purple;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-decoration: none;
+}
